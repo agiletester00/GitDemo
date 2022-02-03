@@ -1,0 +1,322 @@
+[33mcommit 7cf19cb2a2a854b67591ba7a065cc2ae393d5f77[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Sandeep Kumar <agiletester00@gmail.com>
+Date:   Thu Feb 3 15:49:07 2022 +0530
+
+    First Commit
+
+[1mdiff --git a/.classpath b/.classpath[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cd724b5[m
+[1m--- /dev/null[m
+[1m+++ b/.classpath[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<classpath>[m
+[32m+[m	[32m<classpathentry kind="src" output="target/classes" path="src">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="module" value="true"/>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="lib" path="D:/Sandeep/jar/testng-7.5.jar"/>[m
+[32m+[m	[32m<classpathentry kind="output" path="target/classes"/>[m
+[32m+[m[32m</classpath>[m
+[1mdiff --git a/.project b/.project[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f966f6e[m
+[1m--- /dev/null[m
+[1m+++ b/.project[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<projectDescription>[m
+[32m+[m	[32m<name>Restassured</name>[m
+[32m+[m	[32m<comment></comment>[m
+[32m+[m	[32m<projects>[m
+[32m+[m	[32m</projects>[m
+[32m+[m	[32m<buildSpec>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.jdt.core.javabuilder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.m2e.core.maven2Builder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m	[32m</buildSpec>[m
+[32m+[m	[32m<natures>[m
+[32m+[m		[32m<nature>org.eclipse.m2e.core.maven2Nature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.jdt.core.javanature</nature>[m
+[32m+[m	[32m</natures>[m
+[32m+[m[32m</projectDescription>[m
+[1mdiff --git a/.settings/org.eclipse.jdt.core.prefs b/.settings/org.eclipse.jdt.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..43c8d71[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.jdt.core.prefs[m
+[36m@@ -0,0 +1,15 @@[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.targetPlatform=17[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.compliance=17[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.lineNumber=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.localVariable=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.sourceFile=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.assertIdentifier=error[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.enumIdentifier=error[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.forbiddenReference=warning[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=warning[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.release=enabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.source=17[m
+[1mdiff --git a/.settings/org.eclipse.m2e.core.prefs b/.settings/org.eclipse.m2e.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f897a7f[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.m2e.core.prefs[m
+[36m@@ -0,0 +1,4 @@[m
+[32m+[m[32mactiveProfiles=[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32mresolveWorkspaceProjects=true[m
+[32m+[m[32mversion=1[m
+[1mdiff --git a/pom.xml b/pom.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9d9e931[m
+[1m--- /dev/null[m
+[1m+++ b/pom.xml[m
+[36m@@ -0,0 +1,56 @@[m
+[32m+[m[32m<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">[m
+[32m+[m[32m  <modelVersion>4.0.0</modelVersion>[m
+[32m+[m[32m  <groupId>Restassured</groupId>[m
+[32m+[m[32m  <artifactId>Restassured</artifactId>[m
+[32m+[m[32m  <version>0.0.1-SNAPSHOT</version>[m
+[32m+[m[32m  <build>[m
+[32m+[m[32m    <sourceDirectory>src</sourceDirectory>[m
+[32m+[m[32m    <plugins>[m
+[32m+[m[32m      <plugin>[m
+[32m+[m[32m        <artifactId>maven-compiler-plugin</artifactId>[m
+[32m+[m[32m        <version>3.8.1</version>[m
+[32m+[m[32m        <configuration>[m
+[32m+[m[32m          <release>17</release>[m
+[32m+[m[32m        </configuration>[m
+[32m+[m[32m      </plugin>[m
+[32m+[m[32m    </plugins>[m
+[32m+[m[32m  </build>[m
+[32m+[m[32m<dependencies>[m
+[32m+[m[32m<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->[m
+[32m+[m[32m<dependency>[m
+[32m+[m[32m    <groupId>io.rest-assured</groupId>[m
+[32m+[m[32m    <artifactId>rest-assured</artifactId>[m
+[32m+[m[32m    <version>4.5.0</version>[m
+[32m+[m[41m    [m
+[32m+[m[32m</dependency>[m
+[32m+[m[32m<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->[m
+[32m+[m[32m<dependency>[m
+[32m+[m[32m    <groupId>org.seleniumhq.selenium</groupId>[m
+[32m+[m[32m    <artifactId>selenium-java</artifactId>[m
+[32m+[m[32m    <version>4.1.2</version>[m
+[32m+[m[32m</dependency>[m
+[32m+[m[32m<!-- https://mvnrepository.com/artifact/org.testng/testng -->[m
+[32m+[m[32m<dependency>[m
+[32m+[m[32m    <groupId>org.testng</groupId>[m
+[32m+[m[32m    <artifactId>testng</artifactId>[m
+[32m+[m[32m    <version>7.5</version>[m
+[32m+[m[41m    [m
+[32m+[m[32m</dependency>[m
+[32m+[m
+[32m+[m[32m<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->[m
+[32m+[m[32m<dependency>[m
+[32m+[m[32m    <groupId>org.hamcrest</groupId>[m
+[32m+[m[32m    <artifactId>hamcrest</artifactId>[m
+[32m+[m[32m    <version>2.2</version>[m
+[32m+[m[41m    [m
+[32m+[m[32m</dependency>[m
+[32m+[m
+[32m+[m[32m<!-- https://mvnrepository.com/artifact/org.testng/testng -->[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</dependencies>[m
+[32m+[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/RestasssuredDemo.java b/src/RestasssuredDemo.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fc7533f[m
+[1m--- /dev/null[m
+[1m+++ b/src/RestasssuredDemo.java[m
+[36m@@ -0,0 +1,57 @@[m
+[32m+[m[32mimport io.restassured.RestAssured;[m
+[32m+[m[32mimport io.restassured.path.json.JsonPath;[m
+[32m+[m
+[32m+[m[32mimport static org.hamcrest.Matchers.*;[m
+[32m+[m
+[32m+[m[32mimport org.testng.Assert;[m
+[32m+[m
+[32m+[m[32mimport payloads.*;[m
+[32m+[m
+[32m+[m[32mimport static io.restassured.RestAssured.*;[m
+[32m+[m[32mpublic class RestasssuredDemo {[m
+[32m+[m
+[32m+[m	[32mpublic static void main(String[] args) {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32m//Add Place[m[41m [m
+[32m+[m		[32m//Update place[m
+[32m+[m		[32m//get updated Place[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m		[32mRestAssured.baseURI="https://rahulshettyacademy.com";[m
+[32m+[m			[32mString response=given().log().all().queryParam("key","qaclick123").header("Content-Type","application/json")[m
+[32m+[m			[32m.body(payloads.AddPlace()).when().post("maps/api/place/add/json")[m
+[32m+[m			[32m.then().log().all().assertThat().statusCode(200).body("scope",equalTo("APP")).header("server","Apache/2.4.18 (Ubuntu)").extract().response().asString();[m
+[32m+[m		[32mSystem.out.println(response);[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m		[32m  JsonPath jp=new JsonPath(response);[m[41m [m
+[32m+[m		[32m  String placeid=jp.getString("place_id");[m
+[32m+[m		[32m  System.out.println(placeid);[m
+[32m+[m[41m		  [m
+[32m+[m[41m		[m
+[32m+[m		[32m  //Update Place[m
+[32m+[m[41m		  [m
+[32m+[m[41m		  [m
+[32m+[m		[32m  String newadd="70 dammaiguda, INDIA";[m
+[32m+[m		[32m given().log().all().queryParam("key","qaclick123").header("Content-Type","application/json")[m
+[32m+[m		[32m .body("{\r\n"[m
+[32m+[m					[32m+ "\"place_id\":\""+placeid+"\",\r\n"[m
+[32m+[m					[32m+ "\"address\":\""+newadd+"\",\r\n"[m
+[32m+[m					[32m+ "\"key\":\"qaclick123\"\r\n"[m
+[32m+[m					[32m+ "}\r\n"+"").when().put("maps/api/place/update/json")[m
+[32m+[m		[32m  .then().log().all().assertThat().statusCode(200).body("msg",equalTo( "Address successfully updated"));[m
+[32m+[m[41m		 [m
+[32m+[m		[32m //getPlace[m
+[32m+[m[41m		 [m
+[32m+[m		[32m String vnewadd=given().log().all().queryParam("key","qaclick123").queryParam("place_id",placeid)[m
+[32m+[m		[32m .when().post("maps/api/place/get/json").then().log().all().assertThat().statusCode(200).body("address",equalTo(newadd)).extract().response().asString();[m
+[32m+[m[41m	[m
+[32m+[m		[32m JsonPath njp=new JsonPath(vnewadd);[m
+[32m+[m		[32m String nadd=njp.getString("address");[m
+[32m+[m		[32m System.out.println(nadd);[m
+[32m+[m[41m		 [m
+[32m+[m		[32m Assert.assertEquals(newadd,nadd);[m
+[32m+[m[41m		 [m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/Restassur.java b/src/Restassur.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2193c67[m
+[1m--- /dev/null[m
+[1m+++ b/src/Restassur.java[m
+[36m@@ -0,0 +1,26 @@[m
+[32m+[m[32mimport io.restassured.RestAssured;[m
+[32m+[m[32mimport static io.restassured.RestAssured.*;[m
+[32m+[m[32mpublic class Restassur {[m
+[32m+[m
+[32m+[m	[32mpublic static void main(String[] args) {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m
+[32m+[m[41m			[m
+[32m+[m
+[32m+[m				[32mRestAssured.baseURI="https://rahulshettyacademy.com";[m
+[32m+[m					[32mgiven().log().all().queryParam("key","qaclick123").header("Content-Type","application/json")[m
+[32m+[m					[32m.when().get("place_id","c84725316addd8972b72b785b8f95da1").then().log().all().assertThat().statusCode(200);[m
+[32m+[m[41m				[m
+[32m+[m[41m			[m
+[32m+[m
+[32m+[m[41m		[m
+[32m+[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/payloads/Updatepayload.java b/src/payloads/Updatepayload.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6074c0b[m
+[1m--- /dev/null[m
+[1m+++ b/src/payloads/Updatepayload.java[m
+[36m@@ -0,0 +1,15 @@[m
+[32m+[m[32mpackage payloads;[m
+[32m+[m
+[32m+[m[32mpublic class Updatepayload {[m
+[32m+[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic static String UpdatePlace()[m
+[32m+[m	[32m{[m
+[32m+[m[41m		[m
+[32m+[m		[32mreturn "{\r\n"[m
+[32m+[m				[32m+ "\"place_id\":\"2bc49a47f3b1db03ee1dd9c965e257f3\",\r\n"[m
+[32m+[m				[32m+ "\"address\":\"70 dammaiguda, INDIA\",\r\n"[m
+[32m+[m				[32m+ "\"key\":\"qaclick123\"\r\n"[m
+[32m+[m				[32m+ "}\r\n"+"";[m
+[32m+[m	[32m}[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/payloads/payloads.java b/src/payloads/payloads.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..44d60a5[m
+[1m--- /dev/null[m
+[1m+++ b/src/payloads/payloads.java[m
+[36m@@ -0,0 +1,26 @@[m
+[32m+[m[32mpackage payloads;[m
+[32m+[m
+[32m+[m[32mpublic  class payloads {[m
+[32m+[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic static String AddPlace()[m
+[32m+[m	[32m{[m
+[32m+[m		[32mreturn "{\r\n"[m
+[32m+[m				[32m+ "  \"location\": {\r\n"[m
+[32m+[m				[32m+ "    \"lat\": -38.383494,\r\n"[m
+[32m+[m				[32m+ "    \"lng\": 33.427362\r\n"[m
+[32m+[m				[32m+ "  },\r\n"[m
+[32m+[m				[32m+ "  \"accuracy\": 50,\r\n"[m
+[32m+[m				[32m+ "  \"name\": \"Frontline house\",\r\n"[m
+[32m+[m				[32m+ "  \"phone_number\": \"(+91) 983 893 3937\",\r\n"[m
+[32m+[m				[32m+ "  \"address\": \"29, side layout, cohen 09\",\r\n"[m
+[32m+[m				[32m+ "  \"types\": [\r\n"[m
+[32m+[m				[32m+ "    \"shoe park\",\r\n"[m
+[32m+[m				[32m+ "    \"shop\"\r\n"[m
+[32m+[m				[32m+ "  ],\r\n"[m
+[32m+[m				[32m+ "  \"website\": \"http://google.com\",\r\n"[m
+[32m+[m				[32m+ "  \"language\": \"French-IN\"\r\n"[m
+[32m+[m				[32m+ "}\r\n"[m
+[32m+[m				[32m+ "";[m
+[32m+[m[32m}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/target/classes/RestasssuredDemo.class b/target/classes/RestasssuredDemo.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..572eac0[m
+Binary files /dev/null and b/target/classes/RestasssuredDemo.class differ
+[1mdiff --git a/target/classes/Restassur.class b/target/classes/Restassur.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d6f18f1[m
+Binary files /dev/null and b/target/classes/Restassur.class differ
+[1mdiff --git a/target/classes/payloads/Updatepayload.class b/target/classes/payloads/Updatepayload.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9df6f58[m
+Binary files /dev/null and b/target/classes/payloads/Updatepayload.class differ
+[1mdiff --git a/target/classes/payloads/payloads.class b/target/classes/payloads/payloads.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..69a0ab3[m
+Binary files /dev/null and b/target/classes/payloads/payloads.class differ
